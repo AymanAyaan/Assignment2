@@ -51,7 +51,6 @@ run_go_enrichment <- function(gene_list, module_name) {
 m1_analysis <- run_go_enrichment(module1_genes, "Module1")
 m2_analysis <- run_go_enrichment(module2_genes, "Module2")
 
-# 5. EXPORT AND SAVE YOUR MANDATORY ASSIGNMENT CSV FILES
 write.csv(as.data.frame(m1_analysis), file = "GO_enrichment_Module1_results.csv", row.names = FALSE)
 write.csv(as.data.frame(m2_analysis), file = "GO_enrichment_Module2_results.csv", row.names = FALSE)
 
